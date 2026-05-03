@@ -1,7 +1,14 @@
 {
+  "scripts": {
+    "start": "node server.js",
+    "migrate": "node scripts/ensure-photo-url-column.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
+    "cloudinary": "^2.10.0",
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "multer": "^2.1.1",
     "mysql2": "^3.18.2"
   }
 }
